@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">File Explorer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="file_explorer">File Explorer</string>
+    <string name="made_by_zeyad_emad">Made By Zeyad Emad</string>
+    <string name="home">Home</string>
+    <string name="internal_storage">Internal Storage</string>
+    <string name="sd_card">Sd Card</string>
+    <string name="about">About</string>
+    <string name="more">More</string>
+    <string name="phone">Phone</string>
+    <string name="zeyad_emad_pdf">Zeyad Emad.pdf</string>
+    <string name="_1_10_2002">1/10/2002</string>
+    <string name="divider">-</string>
+    <string name="_1_8_mb">1.8 Mb</string>
+    <string name="share">Share</string>
+    <string name="rename">Rename</string>
+    <string name="new_name">New Name:</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="details">Details</string>
+    <string name="file_name">File name:</string>
+    <string name="file_type">File type:</string>
+    <string name="file_size">File size:</string>
+    <string name="modified_time">Modified time:</string>
+    <string name="path">Path:</string>
+    <string name="sorry_there_is_no_files">Sorry , There is No Files</string>
+    <string name="browse">Browse</string>
+    <string name="images">Images</string>
+    <string name="videos">Videos</string>
+    <string name="docs">Docs</string>
+    <string name="audio">Audio</string>
+    <string name="apps">Apps</string>
+    <string name="archives">Archives</string>
+    <string name="last_modified">Last Modified</string>
+    <string name="downloads">Downloads</string>
+    <string name="zeyad_emad_abd_elmaksoud">Zeyad Emad Abd Elmaksoud</string>
+    <string name="android_developer">Android Developer</string>
+</resources>

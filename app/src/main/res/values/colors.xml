@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gold">#FFC107</color>
+    <color name="blue">#1C8BE3</color>
+    <color name="grey">#808080</color>
+    <color name="light_grey">#d3d3d3</color>
+    <color name="dark_grey">#2D2E30</color>
+    <color name="davy_grey">#555555</color>
+    <color name="OuterSpace">#414a4c</color>
+    <color name="green">#232b2b</color>
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/file_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="8dp"
+        android:contentDescription="@string/app_name"
+        android:padding="1dp"
+        android:src="@drawable/folder1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/zeyad_emad_pdf"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textDirection="firstStrong"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/enter"
+        app:layout_constraintStart_toEndOf="@id/file_image"
+        app:layout_constraintTop_toTopOf="@id/file_image" />
+
+    <TextView
+        android:id="@+id/file_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="@string/_1_10_2002"
+        android:textColor="#918B8B"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@id/file_name"
+        app:layout_constraintTop_toBottomOf="@+id/file_name" />
+
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:text="@string/divider"
+        android:textColor="@color/grey"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@id/file_date"
+        app:layout_constraintStart_toEndOf="@id/file_date"
+        app:layout_constraintTop_toTopOf="@id/file_date" />
+
+
+    <TextView
+        android:id="@+id/file_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="@string/_1_8_mb"
+        android:textColor="@color/grey"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@id/divider"
+        app:layout_constraintStart_toEndOf="@id/divider"
+        app:layout_constraintTop_toTopOf="@id/divider" />
+
+    <ImageView
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/enter"
+        app:layout_constraintStart_toEndOf="@id/file_name"
+        app:layout_constraintTop_toBottomOf="@id/file_name"
+        app:layout_constraintBottom_toTopOf="@id/file_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="4dp"
+        android:visibility="gone"
+        android:contentDescription="@string/app_name"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

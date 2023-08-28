@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.zeyad.anew.Fragments.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_navigation_home_to_categorizeFragment2"
+            app:destination="@id/categorizeFragment2" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_internal_storage"
+            app:destination="@id/navigation_internal_storage" />
+        <argument
+            android:name="path"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_internal_storage"
+        android:name="com.zeyad.anew.Fragments.InternalStorage"
+        android:label="fragment_internal_storage"
+        tools:layout="@layout/fragment_internal_stroage">
+        <action
+            android:id="@+id/action_navigation_internal_storage_self"
+            app:destination="@id/navigation_internal_storage" >
+        </action>
+        <argument
+            android:name="path"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_sd_card"
+        android:name="com.zeyad.anew.Fragments.Sd_Card"
+        android:label="fragment_sd__card"
+        tools:layout="@layout/fragment_sd__card" >
+        <action
+            android:id="@+id/action_navigation_sd_card_self"
+            app:destination="@id/navigation_sd_card" />
+        <argument
+            android:name="path"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.zeyad.anew.Fragments.About"
+        android:label="fragment_about2"
+        tools:layout="@layout/fragment_about2" />
+    <fragment
+        android:id="@+id/categorizeFragment2"
+        android:name="com.zeyad.anew.Fragments.CategorizeFragment"
+        android:label="CategorizeFragment" >
+        <argument
+            android:name="fileType"
+            app:argType="string"
+            android:defaultValue='download' />
+    </fragment>
+</navigation>

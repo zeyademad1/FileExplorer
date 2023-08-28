@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/con"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".Fragments.InternalStorage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_margin="4dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/position_path"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:text="@string/phone"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/layout_notFound"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:visibility="gone"
+       android:gravity="center_vertical">
+       <ImageView
+           android:id="@+id/files_not_found"
+           android:layout_width="match_parent"
+           android:layout_height="400dp"
+           android:contentDescription="@string/app_name"
+           android:layout_margin="10dp"
+           android:padding="4dp"
+           android:src="@drawable/not_found"
+           />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/sorry_there_is_no_files"
+           android:textAlignment="center"
+           android:textSize="25sp"
+           android:textColor="@color/light_grey"/>
+
+   </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/files_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="2dp"
+        tools:listitem="@layout/folder_item" />
+
+
+</LinearLayout>
